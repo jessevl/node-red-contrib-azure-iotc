@@ -16,7 +16,7 @@
   "license": "ISC",
   "node-red": {
     "nodes": {
-      "lower-case": "azure-iotc-bridge.js"
+      "azure-iotc-bridge": "azure-iotc-bridge.js"
     }
   }
 }
