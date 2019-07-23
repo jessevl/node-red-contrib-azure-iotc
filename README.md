@@ -8,13 +8,12 @@ Take the following steps to deploy the module to Node-RED and set up the device 
 
 1.  Install the node by copying this repository into a nodes directory within the user data directory of Node-RED. Resolve the dpeendencies of this module by running `npm install` in the newly created folder. Note that this is only recommended for development purposes, once this module is published to npm the install process will be easier.
 
-2. Go to your IoT Central application, and navigate to the `Administration > Device Connection` area.
-  - Copy the `Scope ID` and one of the SAS keys, so either the `Primary Key` or the `Secondary Key`, and paste it into a temporary file or window for usage in the next step.
+2. Go to your IoT Central application, and navigate to the `Administration > Device Connection` area. Copy the `Scope ID` and one of the SAS keys, so either the `Primary Key` or the `Secondary Key`, and paste it into a temporary file or window for usage in the next step.
 
-  ![Scope ID and key](assets/screenshot-scopeIdAndKey.PNG "Scope ID and key")
+  ![Scope ID and key](assets/screenshot-scopeIdAndKey.png "Scope ID and key")
 
 3. Open up Node-RED and notice that 'Azure IoTC Bridge' will show upin the nodes list on the left. Drag the node onto the canvas and double click it to configure your IoTC connection credentials from step 2.
-  ![Configure Node](assets/screenshot-configurenode.PNG "Configure Node")
+  ![Configure Node](assets/screenshot-configurenode.png "Configure Node")
 
 4. The Node is now ready to use. External systems can feed device data through this device bridge node and into your IoT Central app by sending telemetry in the payload of messages into the input of the node. 
   ![Sample telemetry simulators connected to the node](assets/screenshot-module.png "Sample telemetry simulators connected to the node.")
