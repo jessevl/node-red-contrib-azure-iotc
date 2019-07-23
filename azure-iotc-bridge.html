@@ -1,0 +1,41 @@
+<script type="text/javascript">
+    RED.nodes.registerType('azure-iotc-bridge',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            registrationHost: {value:"global.azure-devices-provisioning.net", required:true},
+            idScope: {value:"", required:true},
+            sasToken: {value:"", required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"azure-iotc-bridge";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="azure-iotc-bridge">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-registrationHost"><i class="icon-tag"></i> DPS Host</label>
+        <input type="text" id="node-input-registrationHost" placeholder="global.azure-devices-provisioning.net">
+    </div>
+    <div class="form-row">
+        <label for="node-input-idScope"><i class="icon-tag"></i> ID Scope</label>
+        <input type="text" id="node-input-idScope" placeholder="">
+    </div>
+    <div class="form-row">
+        <label for="node-input-sasToken"><i class="icon-tag"></i> SAS Token</label>
+        <input type="text" id="node-input-sasToken" placeholder="">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="azure-iotc-bridge">
+    <p>This node wraps the IOTC Device Bridge</p>
+</script>
