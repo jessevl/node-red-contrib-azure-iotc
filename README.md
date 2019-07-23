@@ -6,7 +6,7 @@ When a properly formatted message arrives at the (configured) IoTC Node it will 
 ## Instructions
 Take the following steps to deploy the module to Node-RED and set up the device bridge.
 
-1.  Install the node by copying this repository into a nodes directory within the user data directory of Node-RED. Resolve the dpeendencies of this module by running `npm install` in the newly created folder. Note that this is only recommended for development purposes, once this module is published to npm the install process will be easier.
+1.  Install the node by copying this repository into a nodes folder within the user data directory of Node-RED. Resolve the dependencies of this module by running `npm install` in the newly created folder. Note that this is only recommended for development purposes, once this module is published to npm the install process will be easier.
 
 2. Go to your IoT Central application, and navigate to the `Administration > Device Connection` area. Copy the `Scope ID` and one of the SAS keys, so either the `Primary Key` or the `Secondary Key`, and paste it into a temporary file or window for usage in the next step.
 
