@@ -17,7 +17,7 @@ module.exports = function(RED) {
             };
 
             try {
-                handleMessage({ ...parameters}, msg.payload.device, msg.payload.measurements, msg.payload.timestamp);
+                handleMessage({ ...parameters}, msg.payload.device, msg.payload.measurements, msg.payload.properties, msg.payload.timestamp);
             } catch (e) {
                 node.send('[ERROR]', e.message);
             };

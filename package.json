@@ -1,19 +1,22 @@
 {
   "name": "node-red-contrib-azure-iotc-bridge",
   "version": "1.0.1",
-  "description": "",
+  "description": "This Node-Red module wraps the Azure IoT Central Bridge.",
   "main": "index.js",
   "dependencies": {
-    "azure-iot-device": "^1.7.4",
-    "azure-iot-device-http": "^1.7.4",
-    "request": "^2.88.0",
-    "request-promise-native": "^1.0.5"
+    "azure-iot-device": "^1.12.0",
+    "azure-iot-device-http": "^1.11.0",
+    "azure-iot-device-mqtt": "^1.11.0",
+    "azure-iot-provisioning-device": "^1.7.0",
+    "azure-iot-provisioning-device-mqtt": "^1.6.0",
+    "azure-iot-security-symmetric-key": "^1.6.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Jesse van Leth",
+  "license": "MIT",
+  "keywords": [ "node-red" ],
   "node-red": {
     "nodes": {
       "azure-iotc-bridge": "azure-iotc-bridge.js"
