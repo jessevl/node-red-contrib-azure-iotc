@@ -29,6 +29,9 @@ Messages sent to the device bridge node must have the following format in the pa
         "pressure": 50,
         "humidity": 8.5,
         "ledColor": "blue"
+    },   
+    "properties":{
+        "asetting": "off"
     }
 }
 ```
