@@ -49,5 +49,5 @@ the current date and time will be used.
 ![Example of resulting device entries in Azure IoT Central](assets/screenshot-central.png "Node-RED module screenshot")
 
 ## Update 1.0.3
-The two parameters "idScope" and sysToken is no more an manatory parameter. You can now send that parameter within the msg.Object as msg.idScope and msg.sasToken. So now it is possible to send daa to different IoT Central Instances.
+The two parameters "idScope" and "sasToken" is no more an manatory parameter. You can now send that parameter within the msg.Object as msg.idScope and msg.sasToken. So now it is possible to send daa to different IoT Central Instances.
 
