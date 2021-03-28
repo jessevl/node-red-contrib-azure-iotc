@@ -5,8 +5,8 @@
         defaults: {
             name: {value:""},
             registrationHost: {value:"global.azure-devices-provisioning.net", required:true},
-            idScope: {value:"", required:true},
-            sasToken: {value:"", required:true}
+            idScope: {value:"", required:false},
+            sasToken: {value:"", required:false}
         },
         inputs:1,
         outputs:1,
@@ -37,5 +37,5 @@
 </script>
 
 <script type="text/x-red" data-help-name="azure-iotc-bridge">
-    <p>This node wraps the IOTC Device Bridge</p>
+    <p>This node wraps the IOTC Device Bridge - the idScope and sasToken can be given as a paramter msg.idScope and msg.sasToken. So this makes it more flexible to send data to different IoT Centrals at te sae flow.</p>
 </script>

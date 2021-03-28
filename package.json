@@ -1,8 +1,32 @@
 {
-  "name": "node-red-contrib-azure-iotc-bridge",
-  "version": "1.0.2",
-  "description": "This Node-Red module wraps the Azure IoT Central Bridge.",
-  "main": "index.js",
+  "_from": "node-red-contrib-azure-iotc-bridge@1.0.3",
+  "_id": "node-red-contrib-azure-iotc-bridge@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-mFKbtGM8UEkQqGGigu/MZYFl4gaE9TKNFE63jTQww3jKp1PQPK7oYHX7bDxbomnIoOwEAd3ZrJ/glEXNSd5ZPA==",
+  "_location": "/node-red-contrib-azure-iotc-bridge",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "node-red-contrib-azure-iotc-bridge@1.0.3",
+    "name": "node-red-contrib-azure-iotc-bridge",
+    "escapedName": "node-red-contrib-azure-iotc-bridge",
+    "rawSpec": "1.0.",
+    "saveSpec": null,
+    "fetchSpec": "1.0.3"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-azure-iotc-bridge/-/node-red-contrib-azure-iotc-bridge-1.0.2.tgz",
+  "_shasum": "b14cde994d557b9c231533f33a2c4d6afba5b4c8",
+  "_spec": "node-red-contrib-azure-iotc-bridge@1.0.3",
+  "_where": "/data",
+  "author": {
+    "name": "Jesse van Leth"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "azure-iot-device": "^1.12.0",
     "azure-iot-device-http": "^1.11.0",
@@ -11,15 +35,21 @@
     "azure-iot-provisioning-device-mqtt": "^1.6.0",
     "azure-iot-security-symmetric-key": "^1.6.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Jesse van Leth",
+  "deprecated": false,
+  "description": "This Node-Red module wraps the Azure IoT Central Bridge.",
+  "keywords": [
+    "node-red"
+  ],
   "license": "MIT",
-  "keywords": [ "node-red" ],
+  "main": "index.js",
+  "name": "node-red-contrib-azure-iotc-bridge",
   "node-red": {
     "nodes": {
       "azure-iotc-bridge": "azure-iotc-bridge.js"
     }
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.3"
 }

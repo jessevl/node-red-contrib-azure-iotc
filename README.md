@@ -1,7 +1,4 @@
 # Azure IoT Central Device Bridge module for Node-RED
-
-Warning: this node-red module is experimental and provided as-is (see MIT license).
-
 This project wraps the https://github.com/Azure/iotc-device-bridge project in a Node-RED module so that any IoT device or provider can easily be connected to Azure IoT Central (IoTC) without any coding. 
 
 When a properly formatted message arrives at the (configured) IoTC Node it will try sending it as the corresponding device in IoTC. If the device does not yet exist, it will provision a new one in IoTC. Before any telemetry will be processed you'll have to 'associate' the device with a device template in IoT Central. See the below instructions. 
@@ -50,3 +47,7 @@ the current date and time will be used.
 > NOTE: Until the device is associated to a template, the node will return an error.
 
 ![Example of resulting device entries in Azure IoT Central](assets/screenshot-central.png "Node-RED module screenshot")
+
+## Update 1.0.3
+The two parameters "idScope" and sysToken is no more an manatory parameter. You can now send that parameter within the msg.Object as msg.idScope and msg.sasToken. So now it is possible to send daa to different IoT Central Instances.
+
