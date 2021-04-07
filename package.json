@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-azure-iotc-bridge",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This Node-Red module wraps the Azure IoT Central Bridge.",
   "main": "index.js",
   "dependencies": {
